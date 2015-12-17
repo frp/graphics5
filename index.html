@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Лабораторна робота №1</title>
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+    <style type="text/css">
+      body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      #canvas {
+        margin: 0;
+        padding: 0;
+        float: left;
+      }
+
+      #circle {
+        background: red;
+        border-radius: 50%;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="700" height="700"></canvas>
+    <div id="controls">
+      K: <input type="text" id="k" value="4"><br>
+      R: <input type="text" id="r" value="200"><br>
+      <button id="apply">Apply</button>
+    </div>
+
+    <div id="circle"></div>
+
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
